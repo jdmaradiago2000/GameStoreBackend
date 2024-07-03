@@ -1,0 +1,29 @@
+GET http://localhost:5192/games
+
+###
+GET http://localhost:5192/games/2
+
+###
+POST http://localhost:5192/games/
+Content-Type: application/json
+
+{
+    "name": "Resident Evil 3",
+    "genreId": 5,
+    "price": 17.58,
+    "releaseDate": "1998-12-20"
+}
+
+###
+PUT http://localhost:5192/games/4
+Content-Type: application/json
+
+{
+    "name": "Resident Evil",
+    "genreId": 5,
+    "price": 14.99,
+    "releaseDate": "1999-11-18"
+}
+
+###
+DELETE http://localhost:5192/games/3
